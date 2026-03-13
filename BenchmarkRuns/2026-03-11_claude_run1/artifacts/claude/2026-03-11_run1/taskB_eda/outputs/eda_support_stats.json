@@ -1,0 +1,160 @@
+{
+  "target_distribution": {
+    "legitimate": 7011,
+    "fraud": 489,
+    "fraud_pct": 6.52
+  },
+  "transaction_amount": {
+    "legitimate_mean": 24852.41,
+    "legitimate_median": 24755.12,
+    "fraud_mean": 24256.21,
+    "fraud_median": 24260.58
+  },
+  "fraud_rate_by_transaction_type": {
+    "fraud_rate": {
+      "Withdrawal": 0.06802721088435375,
+      "Transfer": 0.0642570281124498,
+      "Payment": 0.06332138590203107
+    },
+    "total": {
+      "Withdrawal": 2499,
+      "Transfer": 2490,
+      "Payment": 2511
+    }
+  },
+  "fraud_rate_by_payment_mode": {
+    "fraud_rate": {
+      "Card": 0.07060669456066945,
+      "NetBanking": 0.0644468313641246,
+      "UPI": 0.064034151547492,
+      "Wallet": 0.061555075593952485
+    },
+    "total": {
+      "Card": 1912,
+      "NetBanking": 1862,
+      "UPI": 1874,
+      "Wallet": 1852
+    }
+  },
+  "fraud_rate_by_hour": {
+    "0": {
+      "fraud_rate": 0.0686,
+      "total": 306
+    },
+    "1": {
+      "fraud_rate": 0.0563,
+      "total": 320
+    },
+    "2": {
+      "fraud_rate": 0.0455,
+      "total": 308
+    },
+    "3": {
+      "fraud_rate": 0.0672,
+      "total": 357
+    },
+    "4": {
+      "fraud_rate": 0.0804,
+      "total": 286
+    },
+    "5": {
+      "fraud_rate": 0.0559,
+      "total": 322
+    },
+    "6": {
+      "fraud_rate": 0.0818,
+      "total": 330
+    },
+    "7": {
+      "fraud_rate": 0.0425,
+      "total": 306
+    },
+    "8": {
+      "fraud_rate": 0.0642,
+      "total": 327
+    },
+    "9": {
+      "fraud_rate": 0.0762,
+      "total": 341
+    },
+    "10": {
+      "fraud_rate": 0.06,
+      "total": 300
+    },
+    "11": {
+      "fraud_rate": 0.0541,
+      "total": 314
+    },
+    "12": {
+      "fraud_rate": 0.0737,
+      "total": 312
+    },
+    "13": {
+      "fraud_rate": 0.0619,
+      "total": 291
+    },
+    "14": {
+      "fraud_rate": 0.0912,
+      "total": 296
+    },
+    "15": {
+      "fraud_rate": 0.0741,
+      "total": 297
+    },
+    "16": {
+      "fraud_rate": 0.0515,
+      "total": 291
+    },
+    "17": {
+      "fraud_rate": 0.0649,
+      "total": 308
+    },
+    "18": {
+      "fraud_rate": 0.0556,
+      "total": 306
+    },
+    "19": {
+      "fraud_rate": 0.0927,
+      "total": 313
+    },
+    "20": {
+      "fraud_rate": 0.0594,
+      "total": 320
+    },
+    "21": {
+      "fraud_rate": 0.0548,
+      "total": 310
+    },
+    "22": {
+      "fraud_rate": 0.0691,
+      "total": 333
+    },
+    "23": {
+      "fraud_rate": 0.0621,
+      "total": 306
+    }
+  },
+  "peak_fraud_hour": 19,
+  "ip_risk_score": {
+    "legitimate_mean": 0.5048,
+    "fraud_mean": 0.5087,
+    "legitimate_median": 0.503,
+    "fraud_median": 0.485
+  },
+  "fraud_rate_by_device_type": {
+    "fraud_rate": {
+      "Android": 0.06941081517352704,
+      "iOS": 0.06639839034205232,
+      "Web": 0.059913283405597165
+    },
+    "total": {
+      "Android": 2478,
+      "iOS": 2485,
+      "Web": 2537
+    }
+  },
+  "previous_failed_attempts": {
+    "legitimate_mean": 2.0078,
+    "fraud_mean": 2.0961
+  }
+}

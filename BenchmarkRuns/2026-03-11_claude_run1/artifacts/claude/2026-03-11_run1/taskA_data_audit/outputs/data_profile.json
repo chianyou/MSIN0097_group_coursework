@@ -1,0 +1,232 @@
+{
+  "shape": {
+    "rows": 7500,
+    "cols": 15
+  },
+  "columns": [
+    "transaction_id",
+    "user_id",
+    "transaction_amount",
+    "transaction_type",
+    "payment_mode",
+    "device_type",
+    "device_location",
+    "account_age_days",
+    "transaction_hour",
+    "previous_failed_attempts",
+    "avg_transaction_amount",
+    "is_international",
+    "ip_risk_score",
+    "login_attempts_last_24h",
+    "fraud_label"
+  ],
+  "dtypes": {
+    "transaction_id": "str",
+    "user_id": "str",
+    "transaction_amount": "float64",
+    "transaction_type": "str",
+    "payment_mode": "str",
+    "device_type": "str",
+    "device_location": "str",
+    "account_age_days": "int64",
+    "transaction_hour": "int64",
+    "previous_failed_attempts": "int64",
+    "avg_transaction_amount": "float64",
+    "is_international": "int64",
+    "ip_risk_score": "float64",
+    "login_attempts_last_24h": "int64",
+    "fraud_label": "int64"
+  },
+  "column_classification": {
+    "id_cols": [
+      "transaction_id",
+      "user_id"
+    ],
+    "target_cols": [
+      "fraud_label"
+    ],
+    "categorical_cols": [
+      "transaction_type",
+      "payment_mode",
+      "device_type",
+      "device_location"
+    ],
+    "numerical_cols": [
+      "transaction_amount",
+      "account_age_days",
+      "transaction_hour",
+      "previous_failed_attempts",
+      "avg_transaction_amount",
+      "is_international",
+      "ip_risk_score",
+      "login_attempts_last_24h"
+    ]
+  },
+  "missing_values": {
+    "counts": {
+      "transaction_id": 0,
+      "user_id": 0,
+      "transaction_amount": 0,
+      "transaction_type": 0,
+      "payment_mode": 0,
+      "device_type": 0,
+      "device_location": 0,
+      "account_age_days": 0,
+      "transaction_hour": 0,
+      "previous_failed_attempts": 0,
+      "avg_transaction_amount": 0,
+      "is_international": 0,
+      "ip_risk_score": 0,
+      "login_attempts_last_24h": 0,
+      "fraud_label": 0
+    },
+    "pct": {
+      "transaction_id": 0.0,
+      "user_id": 0.0,
+      "transaction_amount": 0.0,
+      "transaction_type": 0.0,
+      "payment_mode": 0.0,
+      "device_type": 0.0,
+      "device_location": 0.0,
+      "account_age_days": 0.0,
+      "transaction_hour": 0.0,
+      "previous_failed_attempts": 0.0,
+      "avg_transaction_amount": 0.0,
+      "is_international": 0.0,
+      "ip_risk_score": 0.0,
+      "login_attempts_last_24h": 0.0,
+      "fraud_label": 0.0
+    },
+    "total_missing_cells": 0,
+    "columns_with_missing": []
+  },
+  "duplicate_rows": 0,
+  "target_distribution": {
+    "counts": {
+      "0": 7011,
+      "1": 489
+    },
+    "percentages": {
+      "0": 93.48,
+      "1": 6.52
+    }
+  },
+  "range_checks": {
+    "transaction_hour": {
+      "min": 0.0,
+      "max": 23.0,
+      "out_of_range_count": 0,
+      "expected_range": "[0, 23]"
+    },
+    "ip_risk_score": {
+      "min": 0.0,
+      "max": 1.0,
+      "out_of_range_count": 0,
+      "expected_range": "[0, 1]"
+    },
+    "fraud_label": {
+      "unique_values": [
+        0,
+        1
+      ],
+      "out_of_range_count": -7501,
+      "expected_values": "[0, 1]"
+    },
+    "is_international": {
+      "unique_values": [
+        0,
+        1
+      ],
+      "out_of_range_count": -7501,
+      "expected_values": "[0, 1]"
+    },
+    "transaction_amount": {
+      "min": 50.58,
+      "max": 49985.9,
+      "non_positive_count": 0,
+      "expected": "positive (> 0)"
+    }
+  },
+  "numeric_summary": {
+    "transaction_amount": {
+      "count": 7500.0,
+      "mean": 24813.5342,
+      "std": 14434.7424,
+      "min": 50.58,
+      "25%": 12272.785,
+      "50%": 24715.55,
+      "75%": 37288.375,
+      "max": 49985.9
+    },
+    "account_age_days": {
+      "count": 7500.0,
+      "mean": 1006.9045,
+      "std": 575.6329,
+      "min": 10.0,
+      "25%": 502.75,
+      "50%": 1018.0,
+      "75%": 1505.0,
+      "max": 1999.0
+    },
+    "transaction_hour": {
+      "count": 7500.0,
+      "mean": 11.4359,
+      "std": 6.9509,
+      "min": 0.0,
+      "25%": 5.0,
+      "50%": 11.0,
+      "75%": 18.0,
+      "max": 23.0
+    },
+    "previous_failed_attempts": {
+      "count": 7500.0,
+      "mean": 2.0136,
+      "std": 1.4216,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 4.0
+    },
+    "avg_transaction_amount": {
+      "count": 7500.0,
+      "mean": 15129.061,
+      "std": 8597.7607,
+      "min": 102.79,
+      "25%": 7725.8425,
+      "50%": 15074.81,
+      "75%": 22573.0625,
+      "max": 29994.29
+    },
+    "is_international": {
+      "count": 7500.0,
+      "mean": 0.1007,
+      "std": 0.3009,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "ip_risk_score": {
+      "count": 7500.0,
+      "mean": 0.505,
+      "std": 0.2896,
+      "min": 0.0,
+      "25%": 0.257,
+      "50%": 0.502,
+      "75%": 0.759,
+      "max": 1.0
+    },
+    "login_attempts_last_24h": {
+      "count": 7500.0,
+      "mean": 4.9951,
+      "std": 2.5939,
+      "min": 1.0,
+      "25%": 3.0,
+      "50%": 5.0,
+      "75%": 7.0,
+      "max": 9.0
+    }
+  }
+}

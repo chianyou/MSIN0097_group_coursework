@@ -1,0 +1,19 @@
+Loading dataset …
+  Shape: (7500, 15)
+  ID cols       : ['transaction_id', 'user_id']
+  Target col    : ['fraud_label']
+  Categorical   : ['transaction_type', 'payment_mode', 'device_type', 'device_location']
+  Numerical     : ['transaction_amount', 'account_age_days', 'transaction_hour', 'previous_failed_attempts', 'avg_transaction_amount', 'is_international', 'ip_risk_score', 'login_attempts_last_24h']
+  Duplicate rows: 0
+Range checks complete.
+  Saved: artifacts/claude/2026-03-11_run1/taskA_data_audit/outputs/data_profile.json
+  Saved: artifacts/claude/2026-03-11_run1/taskA_data_audit/plots/missingness_bar.png
+  Saved cleaned dataset: artifacts/claude/2026-03-11_run1/taskA_data_audit/outputs/cleaned.csv  shape=(7500, 15)
+
+=== Data Audit Summary ===
+  Original shape : (7500, 15)
+  Cleaned shape  : (7500, 15)
+  Missing cells  : 0
+  Duplicate rows : 0
+  Fraud rate     : 6.52%
+Task A complete.

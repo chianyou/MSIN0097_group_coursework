@@ -1,0 +1,29 @@
+{
+  "pipeline": "fixed",
+  "fixes_applied": [
+    "FIX-1: fraud_label excluded from feature matrix",
+    "FIX-2: transaction_id and user_id excluded from feature matrix",
+    "FIX-3: StandardScaler fitted on training data only (sklearn Pipeline)",
+    "FIX-4: Stratified train_test_split with random_state=42"
+  ],
+  "split": {
+    "train": 5250,
+    "valid": 1125,
+    "test": 1125
+  },
+  "PR_AUC": 0.062277,
+  "ROC_AUC": 0.478332,
+  "Precision": 0.063707,
+  "Recall": 0.452055,
+  "F1": 0.111675,
+  "confusion_matrix": [
+    [
+      567,
+      485
+    ],
+    [
+      40,
+      33
+    ]
+  ]
+}

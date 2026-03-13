@@ -1,0 +1,12 @@
+Loaded 7500 rows. Fraud: 489 (6.52%)
+Plot 1 saved. [01_target_distribution.png]
+Plot 2 saved. [02_transaction_amount_by_target.png]
+Plot 3 saved. [03_fraud_rate_by_transaction_type.png]
+Plot 4 saved. [04_fraud_rate_by_payment_mode.png]
+Plot 5 saved. [05_fraud_rate_by_hour.png]
+Plot 6 saved. [06_ip_risk_score_by_target.png]
+Plot 7 saved. [07_fraud_rate_by_device_type.png]
+Plot 8 saved. [08_failed_attempts_by_target.png]
+Support stats saved.
+Insights saved.
+Task B complete.

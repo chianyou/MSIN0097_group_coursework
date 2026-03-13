@@ -1,0 +1,22 @@
+agent,task,correctness_v1,correctness_v2,correctness_v3,correctness_avg,stat_validity_v1,stat_validity_v2,stat_validity_v3,stat_validity_avg,reproducibility_v1,reproducibility_v2,reproducibility_v3,reproducibility_avg,output_quality_v1,output_quality_v2,output_quality_v3,output_quality_avg,efficiency_v1,efficiency_v2,efficiency_v3,efficiency_avg,avg_task_score,weight,weighted_score,normalised_score_100,notes
+Claude,Task A,4,3,4,3.67,4,3,4,3.67,4,4,4,4.00,4,3,4,3.67,4,3,3,3.33,3.67,10,36.70,9.17,"Full audit outputs; minor range-check implementation bug in binary columns (v2); slightly below-par efficiency (v2/v3)"
+Claude,Task B,4,4,4,4.00,4,3,4,3.67,4,4,4,4.00,4,4,4,4.00,4,4,3,3.67,3.87,15,58.00,14.50,"Met plot/insight requirements with numeric evidence; minor inconsistencies in statistical narrative (v2)"
+Claude,Task C,4,4,4,4.00,4,4,4,4.00,4,4,4,4.00,3,4,4,3.67,4,4,3,3.67,3.87,20,77.33,19.33,"Best baseline methodology; ROC-AUC<0.5 honestly explained; small output quality deduction for near-random performance"
+Claude,Task D,4,4,4,4.00,4,4,4,4.00,4,4,4,4.00,4,4,4,4.00,3,3,3,3.00,3.80,20,76.00,19.00,"3 candidates + 3 methods; model selected on validation; modest PR-AUC gain; efficiency -1 for 3 iterations"
+Claude,Task E,4,4,4,4.00,4,4,4,4.00,4,4,4,4.00,4,4,4,4.00,4,4,3,3.67,3.93,20,78.67,19.67,"Unanimous near-perfect score; 4 bugs found and fixed; broken PR-AUC=1.0 documented conclusively"
+Claude,Task F,4,4,4,4.00,4,4,4,4.00,4,4,4,4.00,4,4,4,4.00,4,3,3,3.33,3.87,15,58.00,14.50,"All 5 required files; comprehensive tool_run_summary; minor efficiency deduction (v2/v3)"
+Claude,TOTAL,,,,,,,,,,,,,,,,,,,,,,,384.70,96.17,
+Codex,Task A,4,4,3,3.67,4,4,3,3.67,3,3,3,3.00,3,3,3,3.00,4,4,4,4.00,3.47,10,34.67,8.67,"Core audit correct; absolute path in data_profile; run ID placeholder never substituted"
+Codex,Task B,3,4,3,3.33,2,3,3,2.67,3,4,3,3.33,2,3,3,2.67,4,4,4,4.00,3.20,15,48.00,12.00,"Meets minimum (8 insights); directional errors: Insight 2 reverses fraud vs non-fraud mean transaction amount (fraud 24256.21 < non-fraud 24852.41, stated as higher); Insight 3 reverses median IP risk score direction (fraud 0.485 < non-fraud 0.503, stated as higher)"
+Codex,Task C,3,4,4,3.67,4,3,4,3.67,4,4,3,3.67,2,3,3,2.67,4,4,4,4.00,3.53,20,70.67,17.67,"Valid LR baseline; Precision/Recall/F1=0 at default threshold unexplained in notes"
+Codex,Task D,3,4,4,3.67,3,3,3,3.00,4,4,3,3.67,3,3,3,3.00,4,4,4,4.00,3.47,20,69.33,17.33,"Highest PR-AUC improvement; threshold=0.25 produces recall=1.0 (degenerate classifier); not discussed"
+Codex,Task E,4,4,4,4.00,4,4,4,4.00,4,4,3,3.67,4,3,3,3.33,4,4,4,4.00,3.80,20,76.00,19.00,"Best Task E overall; 5 bugs detected; clean error-detection-fix table"
+Codex,Task F,3,3,3,3.00,3,3,3,3.00,3,3,3,3.00,2,2,3,2.33,4,4,4,4.00,3.07,15,46.00,11.50,"Files present but tool_run_summary brief; run ID placeholder throughout"
+Codex,TOTAL,,,,,,,,,,,,,,,,,,,,,,,344.67,86.17,
+Gemini,Task A,3,4,3,3.33,3,4,3,3.33,3,4,3,3.33,2,2,2,2.00,4,4,4,4.00,3.20,10,32.00,8.00,"Outputs present; notes vague; cleaned.csv malformed row; range_check format non-standard"
+Gemini,Task B,2,3,3,2.67,1,2,3,2.00,3,4,3,3.33,1,2,3,2.00,4,4,4,4.00,2.80,15,42.00,10.50,"Insight 7 factually wrong (missing values); vague insights without numeric evidence"
+Gemini,Task C,3,4,3,3.33,3,3,3,3.00,3,4,3,3.33,1,3,3,2.33,3,4,4,3.67,3.13,20,62.67,15.67,"LR baseline runs; Precision/Recall/F1=0; notes are one generic line"
+Gemini,Task D,3,2,3,2.67,2,2,3,2.33,3,3,3,3.00,2,2,3,2.33,4,4,4,4.00,2.87,20,57.33,14.33,"Improved PR-AUC (0.0679) < baseline (0.0711); regression undisclosed; only 2 improvement methods"
+Gemini,Task E,3,2,4,3.00,3,2,4,3.00,3,2,3,2.67,2,2,3,2.33,4,3,4,3.67,2.93,20,58.67,14.67,"4 bugs found; metrics_broken.json missing PR-AUC (shows only Accuracy_Train)"
+Gemini,Task F,2,3,2,2.33,2,2,3,2.33,2,3,3,2.67,1,2,2,1.67,4,4,4,4.00,2.60,15,39.00,9.75,"Generic tool_run_summary; model card inconsistency (v3); minimal traceability detail"
+Gemini,TOTAL,,,,,,,,,,,,,,,,,,,,,,,291.67,72.92,

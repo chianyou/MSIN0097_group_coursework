@@ -1,0 +1,27 @@
+Loaded (7500, 15)
+Features after engineering: 17 (13 num, 4 cat)
+Train=5250  Valid=1125  Test=1125
+
+Training LogisticRegression ...
+  val PR-AUC=0.0837  val ROC-AUC=0.5750
+
+Training RandomForestClassifier ...
+  val PR-AUC=0.0779  val ROC-AUC=0.5289
+
+Training HistGradientBoostingClassifier ...
+  val PR-AUC=0.0674  val ROC-AUC=0.4911
+
+Best model: LogisticRegression  val PR-AUC=0.0837
+Optimal decision threshold (max-F1 on valid set): 0.5319
+
+=== Improved Metrics (TEST) ===
+  model        = LogisticRegression
+  threshold    = 0.531909
+  PR_AUC       = 0.066094
+  ROC_AUC      = 0.502591
+  Precision    = 0.064706
+  Recall       = 0.30137
+  F1           = 0.106538
+Saved: metrics_improved.json, improved_model.joblib
+All plots saved.
+Task D complete.

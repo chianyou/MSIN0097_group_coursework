@@ -1,0 +1,24 @@
+{
+  "pipeline": "broken",
+  "bugs": [
+    "BUG-1: fraud_label included in features (target leakage)",
+    "BUG-2: transaction_id, user_id used as predictors",
+    "BUG-3: StandardScaler fitted on full dataset before split",
+    "BUG-4: train_test_split with no stratify and no random_state"
+  ],
+  "PR_AUC": 1.0,
+  "ROC_AUC": 1.0,
+  "Precision": 1.0,
+  "Recall": 1.0,
+  "F1": 1.0,
+  "confusion_matrix": [
+    [
+      1410,
+      0
+    ],
+    [
+      0,
+      90
+    ]
+  ]
+}

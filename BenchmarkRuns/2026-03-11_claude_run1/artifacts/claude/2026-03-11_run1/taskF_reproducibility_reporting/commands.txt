@@ -1,0 +1,8 @@
+# Task F creates project-level files (no separate script)
+# All reporting artifacts were created inline by the agent.
+
+# To verify the full structure:
+find "/Users/bettylin/Downloads/Predictive Group/BenchmarkRuns/2026-03-11_claude_run1" -type f | sort
+
+# To re-run the entire benchmark:
+bash "/Users/bettylin/Downloads/Predictive Group/BenchmarkRuns/2026-03-11_claude_run1/scripts/run_all.sh"

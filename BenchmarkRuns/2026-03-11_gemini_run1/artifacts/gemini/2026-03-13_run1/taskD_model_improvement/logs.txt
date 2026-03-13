@@ -1,0 +1,6 @@
+Started Task D.
+Tested 3 candidate models.
+Tuned threshold on validation set.
+Evaluated on test set.
+Saved plots and metrics.
+Completed Task D.

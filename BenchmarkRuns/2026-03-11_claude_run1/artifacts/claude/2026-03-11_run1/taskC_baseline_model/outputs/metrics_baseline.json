@@ -1,0 +1,23 @@
+{
+  "model": "LogisticRegression",
+  "split": {
+    "train": 5250,
+    "valid": 1125,
+    "test": 1125
+  },
+  "PR_AUC": 0.062277,
+  "ROC_AUC": 0.478332,
+  "Precision": 0.063707,
+  "Recall": 0.452055,
+  "F1": 0.111675,
+  "confusion_matrix": [
+    [
+      567,
+      485
+    ],
+    [
+      40,
+      33
+    ]
+  ]
+}

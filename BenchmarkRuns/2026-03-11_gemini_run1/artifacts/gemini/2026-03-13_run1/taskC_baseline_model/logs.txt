@@ -1,0 +1,7 @@
+Started Task C.
+Split data (70/15/15).
+Created and fitted pipeline.
+Evaluated model on test set.
+Saved model and metrics.
+Saved plots.
+Completed Task C.

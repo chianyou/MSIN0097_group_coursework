@@ -1,0 +1,17 @@
+Task F: Reproducibility and Reporting
+Status: COMPLETE
+
+Files created:
+  - README.md
+  - requirements.txt
+  - MODEL_CARD.md
+  - scripts/run_all.sh
+  - reports/tool_run_summary.md
+  - artifacts/claude/2026-03-11_run1/taskA_data_audit/{spec,commands,logs,notes}.md + outputs/ + plots/
+  - artifacts/claude/2026-03-11_run1/taskB_eda/{spec,commands,logs,notes}.md + outputs/ + plots/
+  - artifacts/claude/2026-03-11_run1/taskC_baseline_model/{spec,commands,logs,notes}.md + outputs/ + plots/
+  - artifacts/claude/2026-03-11_run1/taskD_model_improvement/{spec,commands,logs,notes}.md + outputs/ + plots/
+  - artifacts/claude/2026-03-11_run1/taskE_bug_leakage_debug/{spec,commands,logs,notes}.md + outputs/ + plots/
+  - artifacts/claude/2026-03-11_run1/taskF_reproducibility_reporting/{spec,commands,logs,notes}.md
+
+All tasks complete.

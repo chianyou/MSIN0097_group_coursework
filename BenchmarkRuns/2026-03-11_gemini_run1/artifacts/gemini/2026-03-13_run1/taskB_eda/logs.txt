@@ -1,0 +1,4 @@
+Started Task B.
+Generated plots and stats.
+Saved insights.
+Completed Task B.

@@ -1,0 +1,7 @@
+cd "/Users/bettylin/Downloads/Predictive Group/BenchmarkRuns/2026-03-11_claude_run1"
+
+# Step 1: Run broken pipeline
+python3 src/broken_pipeline.py
+
+# Step 2: Run fixed pipeline
+python3 src/fixed_pipeline.py

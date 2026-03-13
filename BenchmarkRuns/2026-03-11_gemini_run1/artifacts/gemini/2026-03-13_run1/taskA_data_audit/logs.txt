@@ -1,0 +1,6 @@
+Started Task A.
+Loaded data.
+Calculated profile.
+Saved cleaned.csv.
+Saved plot.
+Completed Task A.

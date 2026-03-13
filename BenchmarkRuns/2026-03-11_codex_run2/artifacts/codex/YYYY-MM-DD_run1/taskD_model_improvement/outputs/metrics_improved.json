@@ -1,0 +1,92 @@
+{
+  "pr_auc": 0.10441500024460908,
+  "roc_auc": 0.5311543703551316,
+  "precision": 0.06589492430988424,
+  "recall": 1.0,
+  "f1": 0.12364243943191311,
+  "threshold": 0.25,
+  "confusion_matrix": [
+    [
+      2,
+      1049
+    ],
+    [
+      0,
+      74
+    ]
+  ],
+  "selected_model": "RandomForestClassifier_shallow",
+  "feature_engineering": true,
+  "validation_threshold": 0.25,
+  "candidate_validation_results": [
+    {
+      "model_name": "LogisticRegression_baseline_plus_fe",
+      "feature_engineering": true,
+      "selected_validation_threshold": 0.5,
+      "validation_metrics_selected_threshold": {
+        "pr_auc": 0.06484474626693862,
+        "roc_auc": 0.48700453148601486,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "threshold": 0.5,
+        "confusion_matrix": [
+          [
+            1052,
+            0
+          ],
+          [
+            73,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "model_name": "RandomForestClassifier_shallow",
+      "feature_engineering": true,
+      "selected_validation_threshold": 0.25,
+      "validation_metrics_selected_threshold": {
+        "pr_auc": 0.06894261278552719,
+        "roc_auc": 0.4424318974946612,
+        "precision": 0.06494661921708185,
+        "recall": 1.0,
+        "f1": 0.12197159565580618,
+        "threshold": 0.25,
+        "confusion_matrix": [
+          [
+            1,
+            1051
+          ],
+          [
+            0,
+            73
+          ]
+        ]
+      }
+    },
+    {
+      "model_name": "HistGradientBoostingClassifier_default",
+      "feature_engineering": false,
+      "selected_validation_threshold": 0.2,
+      "validation_metrics_selected_threshold": {
+        "pr_auc": 0.05783263497976403,
+        "roc_auc": 0.43036095629980725,
+        "precision": 0.06666666666666667,
+        "recall": 0.0273972602739726,
+        "f1": 0.038834951456310676,
+        "threshold": 0.2,
+        "confusion_matrix": [
+          [
+            1024,
+            28
+          ],
+          [
+            71,
+            2
+          ]
+        ]
+      }
+    }
+  ]
+}

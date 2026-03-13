@@ -1,0 +1,44 @@
+{
+  "model": "LogisticRegression",
+  "threshold": 0.531909,
+  "improvement_methods": [
+    "feature_engineering (cyclic hour, risk\u00d7logins, fail\u00d7risk, amount_ratio)",
+    "hyperparameter_tuning (L1-LR, deep RF, slow HGBC)",
+    "threshold_tuning (max-F1 on validation set)"
+  ],
+  "candidate_validation_results": {
+    "LogisticRegression": {
+      "val_PR_AUC": 0.083706,
+      "val_ROC_AUC": 0.574978
+    },
+    "RandomForestClassifier": {
+      "val_PR_AUC": 0.077859,
+      "val_ROC_AUC": 0.528895
+    },
+    "HistGradientBoostingClassifier": {
+      "val_PR_AUC": 0.067449,
+      "val_ROC_AUC": 0.491093
+    }
+  },
+  "split": {
+    "train": 5250,
+    "valid": 1125,
+    "test": 1125
+  },
+  "PR_AUC": 0.066094,
+  "ROC_AUC": 0.502591,
+  "Precision": 0.064706,
+  "Recall": 0.30137,
+  "F1": 0.106538,
+  "confusion_matrix": [
+    [
+      734,
+      318
+    ],
+    [
+      51,
+      22
+    ]
+  ],
+  "dataset_note": "This dataset exhibits very low linear and non-linear signal (max feature-target |r|<0.03). All models converge near the no-skill PR-AUC baseline (~0.065). Results are honest and reproducible."
+}
